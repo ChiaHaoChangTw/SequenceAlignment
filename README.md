@@ -15,7 +15,24 @@ We use 30 for δ.<br>
 | C   | 110 | 0   | 118 | 48  |
 | G   | 48  | 118 | 0   | 110 |
 | T   | 94  | 110 | 110 | 0   |
+## Input Strings
+Input file contains two base strings and their respective insertion positions. For example,<br>
+TACG<br>
+1<br>
+2<br>
+9<br>
+The string generation process is,<br>
+TACG<br>
+TA***TACG***CG<br>
+TAT***TATACGCG***ACGCG<br>
+TATTATACGC***TATTATACGCGACGCG***GACGCG<br>
+## Output
+Output filename will be output.txt, and the format is as following,<br>
+1st line: first 50 characters of first string matching, last 50 characters of first string matching<br>
+2nd line: first 50 characters of second string matching, last 50 characters of second string matching<br>
+3rd line: matching cost<br>
+4th line: time spent<br>
+5th line: memory required<br>
 ## Others
 To compile: ***g++ -std=c++11 SequenceAlignmentDp.cpp***<br>
 To run: ***./a.out [fileName.txt]***<br>
-Output filename will be output.txt.
