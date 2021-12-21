@@ -14,7 +14,7 @@ We use 30 for δ.<br>
 | A   | 0   | 110 | 48  | 94  |
 | C   | 110 | 0   | 118 | 48  |
 | G   | 48  | 118 | 0   | 110 |
-| T   | 94  | 110 | 110 | 0   |
+| T   | 94  | 48  | 110 | 0   |
 ## Input Strings
 Input file contains two base strings and their respective insertion positions. For example,<br>
 TACG<br>
